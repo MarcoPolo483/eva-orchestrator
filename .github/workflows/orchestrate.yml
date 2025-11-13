@@ -18,7 +18,7 @@ jobs:
       - run: npm run build
       - name: Run orchestrator
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.EVA_PAT || secrets.GITHUB_TOKEN }}
           EVA_OWNER: ${{ github.repository_owner }}
           DEFAULT_BRANCH: main
         run: node dist/orchestrator.js
