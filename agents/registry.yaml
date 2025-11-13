@@ -1,0 +1,123 @@
+org: "MarcoPolo483"
+defaultBranch: "main"
+
+# Each agent lists repos it owns; the orchestrator will create and scaffold each listed repo.
+agents:
+  - name: Infra Agent
+    id: infra
+    repos: ["eva-infra"]
+    responsibilities:
+      - Terraform landing zone (networking, private endpoints, Key Vault, APIM, App Insights, Log Analytics)
+      - Managed Identity + role assignments
+      - APIM policies (rate/quota)
+      - Diagnostic settings + tagging standards
+  - name: Utils Agent
+    id: utils
+    repos: ["eva-utils"]
+    responsibilities:
+      - Config loader (Key Vault + env layering)
+      - Structured logging + OpenTelemetry instrumentation
+      - Retry/backoff, circuit breaker, Redis integration
+      - Token/cost budgeting helpers
+  - name: Core Agent
+    id: core
+    repos: ["eva-core"]
+    responsibilities:
+      - Domain model, orchestrators, provider SPI
+      - Event schemas (tool call, plan execution)
+  - name: Auth Agent
+    id: auth
+    repos: ["eva-auth"]
+    responsibilities:
+      - Entra ID integration (single tenant)
+      - Role & tenant claim mapping
+      - Token validation middleware
+  - name: Agent Runtime Agent
+    id: agent
+    repos: ["eva-agent"]
+    responsibilities:
+      - Planner/executor loop
+      - Tool registry & budgets
+      - Memory abstraction (short-term, conversation, vector refs)
+  - name: OpenAI Adapter Agent
+    id: openai
+    repos: ["eva-openai"]
+    responsibilities:
+      - Azure OpenAI chat/tool calling abstractions
+      - Prompt versioning & logging
+      - Content safety hook integration
+  - name: RAG Agent
+    id: rag
+    repos: ["eva-rag"]
+    responsibilities:
+      - Ingest, chunking, multilingual embeddings
+      - Hybrid + semantic search
+      - Citations + evaluation harness
+  - name: API Agent
+    id: api
+    repos: ["eva-api"]
+    responsibilities:
+      - REST/GraphQL + SSE/WebSockets
+      - OpenAPI contract & versioning (/v1)
+      - APIM façade readiness
+  - name: MCP Agent
+    id: mcp
+    repos: ["eva-mcp"]
+    responsibilities:
+      - MCP client integration
+      - Servers: azure, sharepoint_graph, search, tools
+      - On-behalf-of auth flows
+  - name: Safety Agent
+    id: safety
+    repos: ["eva-safety"]
+    responsibilities:
+      - Pre/post safety filters, moderation, injection defense
+      - Hallucination & groundedness eval sets
+      - CI gates & red-teaming scripts
+  - name: Metering Agent
+    id: metering
+    repos: ["eva-metering"]
+    responsibilities:
+      - Metering event pipeline (Log Analytics)
+      - Pricing table & cost calculation
+      - APIM reconciliation
+  - name: Ops Agent
+    id: ops
+    repos: ["eva-ops"]
+    responsibilities:
+      - Live Ops dashboard & controls
+      - Quota & feature flag management
+      - Audit log & cost center UI
+  - name: UI Agent
+    id: ui
+    repos: ["eva-ui"]
+    responsibilities:
+      - Accessible chat interface
+      - Telemetry & streaming integration
+      - Baseline WCAG 2.1 AA compliance
+  - name: i18n Agent
+    id: i18n
+    repos: ["eva-i18n"]
+    responsibilities:
+      - Catalog management (en-US, fr-FR)
+      - ICU formatting & pseudo-localization
+      - Lint & missing key detection
+  - name: i11y Agent
+    id: i11y
+    repos: ["eva-i11y"]
+    responsibilities:
+      - Enterprise accessibility library
+      - Audit CLI & CI actions
+  - name: Seed Agent
+    id: seed
+    repos: ["eva-seed"]
+    responsibilities:
+      - Seed scripts (Cosmos, Search, catalogs, tenants)
+      - Bilingual knowledge set
+  - name: Enterprise Agent
+    id: enterprise
+    repos: ["eva-enterprise"]
+    responsibilities:
+      - Integration tests & version BOM
+      - One-click deploy orchestration
+      - Reusable CI workflow distribution

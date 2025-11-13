@@ -1,0 +1,22 @@
+name: Orchestrate EVA Plan
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  orchestrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run build
+      - name: Run orchestrator
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EVA_OWNER: ${{ github.repository_owner }}
+          DEFAULT_BRANCH: main
+        run: node dist/orchestrator.js
