@@ -2,6 +2,8 @@
 
 Run this locally to create and scaffold all EVA 2.0 repositories in your GitHub account or organization.
 
+**📋 [View EVA Hub - Navigate all 17 repos →](EVA-HUB.md)**
+
 ## What it does
 - Creates repos listed in `agents/registry.yaml`
 - Pushes initial files from `templates/<repo>/...` using the GitHub API
