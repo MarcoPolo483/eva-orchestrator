@@ -1,0 +1,17 @@
+{
+    "subscriptionId": "c59ee575-eb2a-4b51-a865-4b618f9add0a",
+    "tenantId": "",
+    "location": "eastus",
+    "tfstate": {
+        "resourceGroup": "rg-evada2",
+        "storageAccount": "evatfstate123456",
+        "container": "tfstate"
+    },
+    "owner": "MarcoPolo483",
+    "repos": [
+        "eva-infra",
+        "eva-orchestrator"
+    ],
+    "branch": "main",
+    "appDisplayName": "eva-gha-oidc-app"
+}
