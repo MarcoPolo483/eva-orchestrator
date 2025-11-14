@@ -5,6 +5,10 @@ on:
     - cron: "0 17 * * *" # 12:00 EST (17:00 UTC) daily
   workflow_dispatch: {}
 
+concurrency:
+  group: daily-metrics
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -19,7 +23,7 @@ jobs:
       - name: Generate latest metrics (configure PAT for private data)
         uses: lowlighter/metrics@v3.34.0
         with:
-          token: ${{ github.token }} # replace with secrets.METRICS_TOKEN for private metrics
+          token: ${{ secrets.METRICS_TOKEN || github.token }}
           user: MarcoPolo483
           template: classic
           base: header, activity, community, repositories, metadata

@@ -12,6 +12,10 @@ on:
         description: Issue number to receive the status comment
         required: false
 
+concurrency:
+  group: weekly-status-report
+  cancel-in-progress: false
+
 permissions:
   contents: read
   issues: write
@@ -27,14 +31,16 @@ jobs:
       - name: Compose status summary
         id: summary
         uses: actions/github-script@v7
+        env:
+          COMM_CHANNEL_ISSUE: ${{ vars.COMM_CHANNEL_ISSUE }}
         with:
-          github-token: ${{ github.token }} # replace with secrets.STATUS_TOKEN for cross-repo comments
+          github-token: ${{ secrets.STATUS_TOKEN || github.token }}
           script: |
             const core = require('@actions/core');
             const fs = require('fs');
 
             const sprintName = core.getInput('sprint-name') || `Auto Sprint (${new Date().toISOString().slice(0, 10)})`;
-            const statusIssue = core.getInput('status-issue');
+            const statusIssue = core.getInput('status-issue') || process.env.COMM_CHANNEL_ISSUE;
 
             let metrics = 'No metrics snapshot found. Run daily-metrics workflow or upload data to metrics/latest-metrics.json.';
             try {

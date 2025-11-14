@@ -34,6 +34,7 @@ The GitHub workflows in `.github/workflows/` wire the sprint cadence:
 | `EVA_PAT` (optional) | `orchestrate.yml` | Fine-grained PAT with repo + workflow scopes for provisioning new repos | Set when the default token lacks permissions. |
 | `METRICS_TOKEN` (optional) | `daily-metrics.yml` | PAT with `repo` scope to include private activity in metrics | Swap in when broader visibility is required. |
 | `STATUS_TOKEN` (optional) | `weekly-status-report.yml` | PAT if posting to cross-repo issues or org discussions | Not required when commenting in this repo. |
+| `COMM_CHANNEL_ISSUE` (repository variable) | `weekly-status-report.yml`, `sprint-planning.yml` | Default issue number for automation comments and status updates | Set this variable to enable automated posting when workflow inputs are omitted. |
 | `SLACK_WEBHOOK` (optional) | Future automations | Send ceremony/status notifications to Slack | Store as encrypted secret before enabling notifications. |
 
 `orchestrate.yml` remains available for one-click repo provisioning; reference `README.md` for usage and required credentials.
