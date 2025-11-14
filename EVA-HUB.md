@@ -63,6 +63,7 @@
 - [Command Center Replication Guide](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/SPRINT-ZERO-PLAYBOOK.md#phase-4--team-enablement) – pattern for onboarding new EVA pods and apps
 - [Sprint Kit](https://github.com/MarcoPolo483/eva-orchestrator/tree/main/docs/sprint-kit) – sprint plan template, ceremony notes, role runbooks
 - [Sprint History](https://github.com/MarcoPolo483/eva-orchestrator/tree/main/docs/sprint-history) – archive completed sprint artifacts for audits
+- [User Guide](https://github.com/MarcoPolo483/eva-orchestrator/tree/main/docs/user-guide) – PO/SM workflow walkthroughs and future onboarding docs
 
 > The EVA Agile Command Center is designed to scale: clone these playbooks to spin up pods for any EVA project, then tailor guardrails via repo-specific workflows.
 
