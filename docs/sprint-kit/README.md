@@ -6,7 +6,7 @@ Use this folder to bootstrap every sprint. Start with the planning template, lin
 
 - `sprint-plan-template.md` – captures scope, Definition of Ready, exit criteria, risks, and assignments.
 - `ceremony-notes-template.md` – reusable log for planning, stand-ups, QA gate reviews, reviews, and retros.
-- `runbooks/` – role-specific operating guides for EVA Agile Command agents.
+- `runbooks/` – role-specific operating guides for EVA Agile Command agents (Scrum Master, Dev Master, QA Master, Compliance Sentinel, Observability Scribe, Automation Wrangler, Release Steward).
 
 ## How to Use
 
@@ -26,8 +26,26 @@ The GitHub workflows in `.github/workflows/` wire the sprint cadence:
 
 > Configure repository secrets or variables for any integrations (for example, a fine-grained PAT for metrics or webhook URLs) before enabling scheduled jobs.
 
+### Secrets & Tokens Matrix
+
+| Name | Consumed By | Purpose / Scope | Notes |
+|------|-------------|-----------------|-------|
+| `GITHUB_TOKEN` | All workflows | Default repo-scoped token for comments and commits | Provided automatically; sufficient for starter workflows. |
+| `EVA_PAT` (optional) | `orchestrate.yml` | Fine-grained PAT with repo + workflow scopes for provisioning new repos | Set when the default token lacks permissions. |
+| `METRICS_TOKEN` (optional) | `daily-metrics.yml` | PAT with `repo` scope to include private activity in metrics | Swap in when broader visibility is required. |
+| `STATUS_TOKEN` (optional) | `weekly-status-report.yml` | PAT if posting to cross-repo issues or org discussions | Not required when commenting in this repo. |
+| `SLACK_WEBHOOK` (optional) | Future automations | Send ceremony/status notifications to Slack | Store as encrypted secret before enabling notifications. |
+
+`orchestrate.yml` remains available for one-click repo provisioning; reference `README.md` for usage and required credentials.
+
 ## Board Setup
 
 1. Create a sprint view in the EVA Agile Command GitHub Project with columns `Backlog → Ready → In Progress → QA Gate → Done`.
 2. Add swimlanes per pod (eva-api, eva-ui, etc.) to prepare for multi-team scaling.
 3. Enable auto-add of issues/PRs to ensure the board mirrors GitHub activity.
+
+## Role Guidance
+
+- Review runbooks in `runbooks/` before each sprint to confirm responsibilities and escalation paths.
+- Use the [RACI matrix](raci-matrix.md) to clarify who is Responsible, Accountable, Consulted, and Informed for common activities.
+- Store completed artifacts in `../sprint-history/` to maintain an audit trail.

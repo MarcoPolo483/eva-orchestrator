@@ -4,6 +4,8 @@ Run this locally to create and scaffold all EVA 2.0 repositories in your GitHub 
 
 **📋 [View EVA Hub - Navigate all 17 repos →](EVA-HUB.md)**
 
+**🧭 [EVA Agile Command Sprint Kit →](docs/sprint-kit/README.md)**
+
 ## What it does
 - Creates repos listed in `agents/registry.yaml`
 - Pushes initial files from `templates/<repo>/...` using the GitHub API
@@ -42,3 +44,9 @@ npm run dev
 ## Customize
 - Edit `agents/registry.yaml` to change owner/org or repo list
 - Add/modify files under `templates/<repo>` to change what gets pushed
+
+## Agile Command Resources
+
+- [Sprint Kit](docs/sprint-kit/README.md)
+- [Role Runbooks](docs/sprint-kit/runbooks)
+- [RACI Matrix](docs/sprint-kit/raci-matrix.md)
