@@ -1,0 +1,56 @@
+name: Sprint Planning Kickoff
+
+on:
+  workflow_dispatch:
+    inputs:
+      sprint-name:
+        description: Name of the sprint (e.g., 2025-11 Sprint 01)
+        required: true
+      planning-issue:
+        description: Issue number used to track the sprint plan
+        required: false
+      project-url:
+        description: Link to the GitHub Project sprint view
+        required: false
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  prepare-templates:
+    name: Share sprint kit links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit summary comment
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const sprintName = core.getInput('sprint-name');
+            const planningIssue = core.getInput('planning-issue');
+            const projectUrl = core.getInput('project-url');
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const body = [
+              `## Sprint Planning Kickoff: ${sprintName}`,
+              '',
+              '- [Sprint Plan Template](docs/sprint-kit/sprint-plan-template.md)',
+              '- [Ceremony Notes Template](docs/sprint-kit/ceremony-notes-template.md)',
+              '- [Role Runbooks](docs/sprint-kit/runbooks)',
+              projectUrl ? `- [Sprint board view](${projectUrl})` : '',
+              '',
+              'Copy these templates into a new folder under `docs/sprint-history/` once planning completes.'
+            ].filter(Boolean).join('\n');
+
+            if (planningIssue) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: Number(planningIssue),
+                body
+              });
+            } else {
+              core.notice('No planning issue provided; comment not posted.');
+            }

@@ -1,0 +1,31 @@
+name: Daily Metrics Snapshot
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # 06:00 UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Refresh metrics dashboard
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate latest metrics (configure PAT for private data)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ github.token }}
+          user: MarcoPolo483
+          template: classic
+          base: header, activity, community, repositories, metadata
+          repositories_affiliations: owner
+          config_output: json
+          filename: metrics/latest-metrics.json
+          output_action: commit
+          committer_branch: ${{ github.ref }}
+          committer_message: "chore(metrics): refresh daily snapshot"

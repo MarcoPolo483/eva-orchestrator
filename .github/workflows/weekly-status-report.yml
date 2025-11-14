@@ -1,0 +1,71 @@
+name: Weekly Status Report
+
+on:
+  schedule:
+    - cron: "0 15 * * 5" # Fridays at 15:00 UTC
+  workflow_dispatch:
+    inputs:
+      sprint-name:
+        description: Sprint name to include in the report
+        required: false
+      status-issue:
+        description: Issue number to receive the status comment
+        required: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  publish:
+    name: Post status summary
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compose status summary
+        id: summary
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            const core = require('@actions/core');
+            const fs = require('fs');
+
+            const sprintName = core.getInput('sprint-name') || `Auto Sprint (${new Date().toISOString().slice(0, 10)})`;
+            const statusIssue = core.getInput('status-issue');
+
+            let metrics = 'No metrics snapshot found. Run daily-metrics workflow or upload data to metrics/latest-metrics.json.';
+            try {
+              const path = 'metrics/latest-metrics.json';
+              if (fs.existsSync(path)) {
+                const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+                metrics = `Metrics refreshed: ${data.generatedAt || data.timestamp || 'see attachment'}`;
+              }
+            } catch (err) {
+              core.warning(`Unable to parse metrics file: ${err.message}`);
+            }
+
+            const body = [
+              `## Weekly Status – ${sprintName}`,
+              '',
+              `- Metrics: ${metrics}`,
+              '- Highlights: _add wins here_',
+              '- Risks: _list risks and mitigations_',
+              '- Next Steps: _planned focus for upcoming sprint_',
+              '',
+              'Update this template with project specifics before sharing with stakeholders.'
+            ].join('\n');
+
+            if (!statusIssue) {
+              core.notice('No status issue provided; status comment not posted.');
+              return;
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: Number(statusIssue),
+              body
+            });

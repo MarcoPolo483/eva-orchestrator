@@ -53,7 +53,18 @@
 
 | Repository | Description |
 |------------|-------------|
-| [eva-orchestrator](https://github.com/MarcoPolo483/eva-orchestrator) | Local scaffolding tool for creating all EVA repos |
+| [eva-orchestrator](https://github.com/MarcoPolo483/eva-orchestrator) | EVA Agile Command hub: governance docs, workflows, scaffolding |
+
+## 🧭 EVA Agile Command
+
+- [Operating Model](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/AGILE-OPERATING-MODE.md) – roles, ceremonies, guardrails
+- [Definition of Done](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/DEFINITION-OF-DONE.md) – quality gates for every increment
+- [Sprint Zero Playbook](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/SPRINT-ZERO-PLAYBOOK.md) – readiness checklist before Sprint 1
+- [Command Center Replication Guide](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/SPRINT-ZERO-PLAYBOOK.md#phase-4--team-enablement) – pattern for onboarding new EVA pods and apps
+- [Sprint Kit](https://github.com/MarcoPolo483/eva-orchestrator/tree/main/docs/sprint-kit) – sprint plan template, ceremony notes, role runbooks
+- [Sprint History](https://github.com/MarcoPolo483/eva-orchestrator/tree/main/docs/sprint-history) – archive completed sprint artifacts for audits
+
+> The EVA Agile Command Center is designed to scale: clone these playbooks to spin up pods for any EVA project, then tailor guardrails via repo-specific workflows.
 
 ## 🎯 Quick Links
 
