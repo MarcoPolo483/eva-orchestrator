@@ -47,6 +47,8 @@ npm run dev
 
 ## Agile Command Resources
 
-- [Sprint Kit](docs/sprint-kit/README.md)
+- [Sprint Kit](docs/sprint-kit/README.md) – includes communication protocol for automated status updates
 - [Role Runbooks](docs/sprint-kit/runbooks)
 - [RACI Matrix](docs/sprint-kit/raci-matrix.md)
+
+When the `COMM_CHANNEL_ISSUE` repository variable is configured, automated workflows will post updates to the designated communication thread.
