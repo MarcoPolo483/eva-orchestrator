@@ -2,7 +2,7 @@ name: Daily Metrics Snapshot
 
 on:
   schedule:
-    - cron: "0 6 * * *" # 06:00 UTC daily
+    - cron: "0 17 * * *" # 12:00 EST (17:00 UTC) daily
   workflow_dispatch: {}
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
       - name: Generate latest metrics (configure PAT for private data)
         uses: lowlighter/metrics@v3.34.0
         with:
-          token: ${{ github.token }}
+          token: ${{ github.token }} # replace with secrets.METRICS_TOKEN for private metrics
           user: MarcoPolo483
           template: classic
           base: header, activity, community, repositories, metadata

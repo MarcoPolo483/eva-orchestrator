@@ -2,7 +2,7 @@ name: Weekly Status Report
 
 on:
   schedule:
-    - cron: "0 15 * * 5" # Fridays at 15:00 UTC
+    - cron: "0 17 * * 5" # Fridays at 12:00 EST (17:00 UTC)
   workflow_dispatch:
     inputs:
       sprint-name:
@@ -28,7 +28,7 @@ jobs:
         id: summary
         uses: actions/github-script@v7
         with:
-          github-token: ${{ github.token }}
+          github-token: ${{ github.token }} # replace with secrets.STATUS_TOKEN for cross-repo comments
           script: |
             const core = require('@actions/core');
             const fs = require('fs');
