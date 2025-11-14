@@ -18,13 +18,19 @@
 | 2025-11-17 | Pending | QA gate rehearsal scheduled | QA Master |
 | 2025-11-18 | Pending | Wrap-up + retro prep | Scrum Master |
 
+## Workflow Tests
+
+- **2025-11-14:** `sprint-planning.yml` manual dispatch (run [19376727644](https://github.com/MarcoPolo483/eva-orchestrator/actions/runs/19376727644)) succeeded but skipped posting to issue #4 because the `planning-issue` input was ignored; follow-up bug filed with SM.
+- **2025-11-14:** `qa-gate.yml` manual dispatch (run [19376738042](https://github.com/MarcoPolo483/eva-orchestrator/actions/runs/19376738042)) executed the placeholder QA command and completed without a PR target, as expected for the dry run.
+
 ## QA Gate Review
 
 - **Date:** 2025-11-17
 - **Build status:** Pending
 - **Outcome:** _To be filled during dry run_
+- **Placeholder test command:** `echo "qa-gate placeholder pass"`
 - **Follow-ups:**
-  - [ ] Document placeholder test command output
+  - [ ] Capture command output and attach to DR2 issues when executed
 
 ## Sprint Review
 

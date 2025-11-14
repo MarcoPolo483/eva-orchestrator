@@ -27,14 +27,27 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const sprintName = core.getInput('sprint-name');
-            const planningIssue = core.getInput('planning-issue');
-            const projectUrl = core.getInput('project-url');
+            const payloadInputs = context.payload.inputs || {};
+            const sprintName =
+              core.getInput('sprint-name') ||
+              payloadInputs['sprint-name'] ||
+              payloadInputs['sprint_name'];
+            const planningIssue =
+              core.getInput('planning-issue') ||
+              core.getInput('planning_issue') ||
+              payloadInputs['planning-issue'] ||
+              payloadInputs['planning_issue'];
+            const projectUrl =
+              core.getInput('project-url') ||
+              core.getInput('project_url') ||
+              payloadInputs['project-url'] ||
+              payloadInputs['project_url'];
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
+            const resolvedSprintName = sprintName || 'Unnamed Sprint';
             const body = [
-              `## Sprint Planning Kickoff: ${sprintName}`,
+              `## Sprint Planning Kickoff: ${resolvedSprintName}`,
               '',
               '- [Sprint Plan Template](docs/sprint-kit/sprint-plan-template.md)',
               '- [Ceremony Notes Template](docs/sprint-kit/ceremony-notes-template.md)',
