@@ -7,7 +7,7 @@
       "sha256": "7aa8a48e0136106fc358b3a5bde1f075eb031f900eb3c3efed9dd29b4508618d",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "process_flow_agent.drawio.png",
@@ -16,7 +16,7 @@
       "sha256": "47de67ebc23f9ba05939cfc6a960f1b13e045b2ce83141f3cbeb4cf9720cefa4",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "process_flow_agent.png",
@@ -25,7 +25,7 @@
       "sha256": "47de67ebc23f9ba05939cfc6a960f1b13e045b2ce83141f3cbeb4cf9720cefa4",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "process_flow_chat.drawio.png",
@@ -34,7 +34,7 @@
       "sha256": "4224097ac74617df1b91ae7e06c61df50aeabc5a6c61ba1df92ab4b4be8af4a7",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "process_flow_chat.png",
@@ -43,7 +43,7 @@
       "sha256": "1df509ab8d4cfdce6379f5538f9fcf2c592ffa93ab3b2ca4a35b6d570a60d4c1",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "work-plus-web-search-web.png",
@@ -52,7 +52,7 @@
       "sha256": "32a16c33ff43cc164cdf419ccd5e787cf9b76ccfda2a14ebf2ff68a70e81a47e",
       "category": "search-feature",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "UX_analysispanel_supportingcontent.png",
@@ -61,7 +61,7 @@
       "sha256": "9c2045fd745f837a25bc8ebaac213f0afc70ead3f9fc2bdc56c66d2cc16611a6",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "UX_analysispanel_thoughtprocess.png",
@@ -70,7 +70,7 @@
       "sha256": "e47dd116de38d94305d5982ca4a3b14ac892b98b5c33c8e7f3929340eda2d0a7",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "UX_anlysispanel_citation_document.png",
@@ -79,7 +79,7 @@
       "sha256": "ba14d37764d084d41a7698116d8e8232e363fd0d3de2b4fc39af522c7ac9374b",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "UX_anlysispanel_citation_documentsection.png",
@@ -88,7 +88,7 @@
       "sha256": "092a2f6e0d8e0323277a3f4529ca1696b219589f7f3a0cb65a9981845ca7f098",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "VectorSearch.png",
@@ -97,7 +97,7 @@
       "sha256": "330afee6ff47850ff4fd745319e79ad3ea24432445c2b049081ae93e0636501b",
       "category": "search-feature",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "adjust-settings-ui.png",
@@ -106,7 +106,7 @@
       "sha256": "8f6405ab1a0c72514dd792d70788e4cc279de81f1774a5cc3f21a3e44c27feb1",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "app_registration.png",
@@ -115,7 +115,7 @@
       "sha256": "a56aeecbfde2b03c65c4f3713aea04cb162d67086418834d1546937b71c73569",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "appcomponents.png",
@@ -124,7 +124,7 @@
       "sha256": "812b41deaf1426c7df2b9e35e98d9084c6cf2acede5597c7b4a2cd6e4e382523",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "ask-a-question-interface.jpg",
@@ -133,7 +133,7 @@
       "sha256": "a8d10ee106a24b4862afd74a063fdd8f23435d47fae87d85d9734739c3c95c0a",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "authentication_identity_provider_identification.jpg",
@@ -142,7 +142,7 @@
       "sha256": "0e27d6ebd02a537e1be82588591f474bdd7c5a030d0b36b882e1fdd9e2060514",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "authentication_managed_application.jpg",
@@ -151,7 +151,7 @@
       "sha256": "60668384004186971bcad10da1dc084cc27f0410d18cd4d97c45eac3bbc02050",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "chat-interface.png",
@@ -160,7 +160,7 @@
       "sha256": "b318bad6fcee0aa3bdf1b41c195da2cbb5fdfc8f7c8aa0a7307ff3602af6d717",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "codespace_creation.png",
@@ -169,7 +169,7 @@
       "sha256": "8b8c146fd729b7ac6c0a5a630a9316e8ade5e7d35fed41d3262272a7c5209cb6",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "codespaces_building_container.png",
@@ -178,7 +178,7 @@
       "sha256": "286570e2b6607593ddb86ff3bf8e3a39101a535dc2205d209eccba8e876a831e",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "codespaces_open_in_vs_code_desktop.png",
@@ -187,7 +187,7 @@
       "sha256": "d35c279f24800fc2346d2c3db925e5bc397074956c65849719fd77f127bc3560",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "configure-answer-generation.png",
@@ -196,7 +196,7 @@
       "sha256": "f8f5fbbc89f33b32745b94262a133e5aa301c04c26c8842131f46c39fa6273b3",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "cosmos_account.png",
@@ -205,7 +205,7 @@
       "sha256": "5663361809d7e26f08ee2ee8b2d71db82a3c5b3db886b78e862f16ba7da31bf3",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "credential-lifespan.png",
@@ -214,7 +214,7 @@
       "sha256": "2a4b74a3a261642a1d3d792bbc68bf98ed9f403610d5ea8e36a6c86004275e01",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:55Z",
-      "last_updated": "2025-11-15T22:20:55Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "custom_language_file.png",
@@ -223,7 +223,7 @@
       "sha256": "1ed338423132aa9cdc5a502614cb2fe542e2657cf2dcf7888ede10110dc63021",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "data_explorer.png",
@@ -232,7 +232,7 @@
       "sha256": "e3b30007ce8547da9580c92920746681cf7409f65cf3c098e49de22da896690d",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "deployment_app_service_location.jpg",
@@ -241,7 +241,7 @@
       "sha256": "c7d2ca056273e1e4099afb960b463729065b04dc0cd04b53bb05f8f92ac29f0b",
       "category": "deployment-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "deployment_default_domain.jpg",
@@ -250,7 +250,7 @@
       "sha256": "467f2a237e0e5c48b3633c1f6456545970fe7f58a8bbc4e2f6da0e149f60e723",
       "category": "deployment-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "developing_in_a_codespaces_image_1.png",
@@ -259,7 +259,7 @@
       "sha256": "3670ad07c259977505cacb8bf6920964f9e257467fd5d9541cb5dec8e4325f7f",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "developing_in_a_codespaces_image_2.png",
@@ -268,7 +268,7 @@
       "sha256": "713f7e494d9f9da11266f079627b975d3a279c57013a7eb3fe455c2b193e5d70",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "developing_in_a_codespaces_open_in_vscode_2.png",
@@ -277,7 +277,7 @@
       "sha256": "3a448277e0448bcd086dd11727416be1fbe02205d976afc6990070eb333115ce",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "developing_in_a_codespaces_open_in_vscode_3.png",
@@ -286,7 +286,7 @@
       "sha256": "7bb9abe534dd59c89285d4ec2f4063977d19e6d202ec48dabfd4046d67eb22a5",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "developing_in_a_codespaces_open_in_vscode_4.png",
@@ -295,7 +295,7 @@
       "sha256": "437f6aab301c91bc58e9b89dbbf5f524028e461abb9d5fc646938827dc91d85d",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "fastapi_debug.png",
@@ -304,7 +304,7 @@
       "sha256": "f377f915ef4e5093defcd25d93311b9146bb07d6380821d428ecce5c881208f0",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "fork_repo.png",
@@ -313,7 +313,7 @@
       "sha256": "e9d27e96f88f42cc49f249f9eb12ab67a99ec632f689bbb923874145eaf76de9",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "frontend-watch.png",
@@ -322,7 +322,7 @@
       "sha256": "15719e0182c6dc15fce6837b537d3fd91e05419c27097f53f4e476b89e36fae0",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "function_attach.png",
@@ -331,7 +331,7 @@
       "sha256": "3f7d7314a8d3450dba3371e4be02888190da88074bc98f2f4ac7cb125ad8015c",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "function_running.png",
@@ -340,7 +340,7 @@
       "sha256": "859087341452d9dfc9a7482b11f46183975de0b8fc2c78fbdfc168b70d5fb146",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "generative-ungrounded-ui.png",
@@ -349,7 +349,7 @@
       "sha256": "186b8b5892b6e920be3bd9130416e28396c0e5c6c2ce255fcf5189dcf601faf9",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "info-assist-chat-ui.png",
@@ -358,7 +358,7 @@
       "sha256": "218a2a4e831fa99d566dda7977f0929dfd426c6984e791704f15f668db898e63",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "info_assistant_chatscreen.png",
@@ -367,7 +367,7 @@
       "sha256": "513117b748f7535c2a9ed75f539d6d29ebd9ac23243157c23d989e2c450abdff",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "known_Issues_web_app_authentication.png",
@@ -376,7 +376,7 @@
       "sha256": "a91f82ba6fa1eb777f3fb9ed08e278ac9b5f2b218069f4236a3527265ef8fdfb",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "manage-content-delete.png",
@@ -385,7 +385,7 @@
       "sha256": "e9a2ce59c53e1447e062b26035d6fd5b298582759d827237a6db5864fdfd7984",
       "category": "content-management",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "manage-content-interface.png",
@@ -394,7 +394,7 @@
       "sha256": "5f0ea988ee3d21f0e21884b9b7a4dc24ab6baa4f7113554b19873780d9b63865",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "manage-content-ui.png",
@@ -403,7 +403,7 @@
       "sha256": "339ab0c4efd26fd7eccabb0cadcfd676f525571df1d123106f5a92a2b5cb5825",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "manage-content-upload-files-1.png",
@@ -412,7 +412,7 @@
       "sha256": "26928531e6c91757b4e8bdd534110bf13a1617c2757d1505a7c4c2101b634e0d",
       "category": "content-management",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "manage-content-upload-files.png",
@@ -421,7 +421,7 @@
       "sha256": "0e09db05d33d977eec685990bd5bb28c4ae41d037dc102a57738c9480b46f0bb",
       "category": "content-management",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "manage-content-upload-status.png",
@@ -430,7 +430,7 @@
       "sha256": "280a518a5105f504476427ceb8f040a121923804b844d753abc5825a8df8925d",
       "category": "content-management",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "math-assistant-give-me-clues.png",
@@ -439,7 +439,7 @@
       "sha256": "f7cf9e8aa968f14e02293da60ac274cabd8245fdf88f20eb72665ff1e541d8dd",
       "category": "feature-math-assistant",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "math-assistant-show-me-how-to-solve.png",
@@ -448,7 +448,7 @@
       "sha256": "f39a11afc8b071f49d457f3bd8869682bfbf2a9fcfdb7cb3ac22e022119d96c4",
       "category": "feature-math-assistant",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:22Z"
     },
     {
       "filename": "math-assistant-show-me-the-answer.png",
@@ -457,7 +457,7 @@
       "sha256": "f3aecfa7f7eccc09af638e23dd10b77d8aa5c9e3707c72d613e31b7e5285e9f0",
       "category": "feature-math-assistant",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "math-assistant-ui.png",
@@ -466,7 +466,7 @@
       "sha256": "e9d527a39535f1cdf4a7e358bc694422a3e002ace8dbb336803e2b87eaff9eac",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "python_version.png",
@@ -475,7 +475,7 @@
       "sha256": "937ac8b10497e9173ee54bf15f9fae1b7fb57fc34a2154531c2ecc4f1474290c",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "sandbox_environment_build_pipeline_configuration.png",
@@ -484,7 +484,7 @@
       "sha256": "7be463fe27868827fdcc06c378e880212b9e338e26186be11d657bf52884321b",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "secure-deploy-detail-architecture.drawio",
@@ -493,7 +493,7 @@
       "sha256": "579c32fa8974159d23b300111a50b746e4f0c6d9b3dd1713f707dbc34c1cc1d3",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "secure-deploy-detail-architecture.png",
@@ -502,7 +502,7 @@
       "sha256": "362b5e0ac21d4745b53effbf9e3200285b9ad44b4a8a901a735b99d24dbdde11",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "secure-deploy-frontend-architecture.drawio",
@@ -511,7 +511,7 @@
       "sha256": "0543d9ae9aaea894bd959255ccffc6d4abffa02abd95a842e911f4637041c551",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "secure-deploy-frontend-architecture.png",
@@ -520,7 +520,7 @@
       "sha256": "b7a739db22940bd67628ca80a055ad5ba799ae3c7087bf6ae473c65ca840a8ee",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "secure-deploy-function-architecture.drawio",
@@ -529,7 +529,7 @@
       "sha256": "78703e7c2a1c7767def40b27da6d911023751955ed7b5b572aca59d752e9e405",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "secure-deploy-function-architecture.png",
@@ -538,7 +538,7 @@
       "sha256": "1fdb481199b1304f64a6fff9d7d9afd5f2189b1e8450dc162c7f844e3049a483",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "secure-deploy-high-level-architecture.drawio",
@@ -547,7 +547,7 @@
       "sha256": "70a0d02bc56435a5bedacb1513c0a08ba2c15102ca93124f787453bb5a0755b5",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "secure-deploy-high-level-architecture.png",
@@ -556,7 +556,7 @@
       "sha256": "3b6f479b875c301a221b19d373b4d377186303842b124c774def039d1c41d989",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "secure-deploy-network-architecture.png",
@@ -565,7 +565,7 @@
       "sha256": "a7df0264661c5330cf276a7bffc9725c2345f17db473309b3b5b334d4cf54402",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "sharepoint-preview-designer-known-issue.png",
@@ -574,7 +574,7 @@
       "sha256": "1f825d33e4dd6888f28a3bd71ac66b8ae0ff4409a96fce4d5153d884fbbb28ff",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:56Z",
-      "last_updated": "2025-11-15T22:20:56Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "sharepoint_logic_app_diagram.png",
@@ -583,7 +583,7 @@
       "sha256": "275e87e7d9c5c370a1f24047a11e4c485dddc11fcd9dc1610965118332df05a3",
       "category": "architecture-diagram",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "tab-data-assist-how-many-rows.png",
@@ -592,7 +592,7 @@
       "sha256": "e900a5d08ac62f5bb01abf0601d708418a4d4237f9d00e9a71bfe745327f5fff",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "tab-data-assist-how-many.png",
@@ -601,7 +601,7 @@
       "sha256": "ce20f7f9017e313841818a57d1e4abd07355fef17aa3a21c1ef45fb440abf9bb",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "tab-data-assist-upload-files-ui.png",
@@ -610,7 +610,7 @@
       "sha256": "2857603f9c5672fa87c170e9c4c0dd4bb1db70dcd8607225233851675460412a",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "upload-files-drag-drop.jpg",
@@ -619,7 +619,7 @@
       "sha256": "879cb77536952eac4d9d6b0277786d15434ea1c8a17989665a445fff1eec3a9e",
       "category": "content-management",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "upload-files-link.png",
@@ -628,7 +628,7 @@
       "sha256": "1686f295a45b6a6e716e21ddf425977f96f528ce17bebafe7cf164287bea29eb",
       "category": "content-management",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "upload-status-delete.png",
@@ -637,7 +637,7 @@
       "sha256": "f9e3ca0652cf95e0788d502ab4256a8c255d64f7b636d8ee0f868d32d155d592",
       "category": "content-management",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "view-upload-status-link.png",
@@ -646,7 +646,7 @@
       "sha256": "13c724e827d20cbb2d2843d05c8cfea115e53469a9a6e5484b4204c37e89f9c9",
       "category": "content-management",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "view-upload-status-options-and-refresh.png",
@@ -655,7 +655,7 @@
       "sha256": "04516a7e3c9bcc4aaafe9073eea9bd7a26960489a6c305725fcb08bc1513c348",
       "category": "content-management",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "virtual_env.jpg",
@@ -664,7 +664,7 @@
       "sha256": "a77665334bb6fe0c6e25f260f8a40d448b68c94ce4c6d9a1e2c3e89785e79dd1",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "vite-debug.png",
@@ -673,7 +673,7 @@
       "sha256": "b3d423c8448cde4fcb39e202cd282b8952cc5526d928a2efa44908d1dfc218f7",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "vscode_reopen_in_container.png",
@@ -682,7 +682,7 @@
       "sha256": "6bdf898daed656a08d14c9caf801f35a9f23c52ab0f4eef422bd33ccd81846ee",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "vscode_starting_dev_container.png",
@@ -691,7 +691,7 @@
       "sha256": "91f42fa709dbdfaa9ad612f125ab65d7e7619205429f04653dcb250a383763e2",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "vscode_terminal_windows.png",
@@ -700,7 +700,7 @@
       "sha256": "da338c6f9fd10db078e52656c88316eba22bd646bf9a7530449d393ce3d23c78",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "webapp-backend.png",
@@ -709,7 +709,7 @@
       "sha256": "ed6b95d29fc184677d4e224b420fcda39f8348f4c5b14e56a80a7e8709c5c36b",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "webapp_debug_1.png",
@@ -718,7 +718,7 @@
       "sha256": "69cd219d147c0129a2b30a59dc4c16f5dc86820464d60ddf41ef5eb1df19734c",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "webapp_debug_2.png",
@@ -727,7 +727,7 @@
       "sha256": "b923754540c81f84021e83ec6166ad3d71469113c75649f196d54e7ca215bd71",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "webapp_debug_3.png",
@@ -736,7 +736,7 @@
       "sha256": "097a8df09d7831c38af3d4695688bef9f5deb4e06805a69f021de01ea0ad9a20",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "work-plus-web-compare-with-web.png",
@@ -745,7 +745,7 @@
       "sha256": "6e6ae6ff9c28e39edb45adf6a2681f89e04aadf3b22554a026df4d04df47fa37",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "work-plus-web-compare-with-work.png",
@@ -754,7 +754,7 @@
       "sha256": "4db2f3e769d007bdcf97f4f54aeb0810cabb1feab3f8abec243cf5ad02173205",
       "category": "misc",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "work-plus-web-search-web.png",
@@ -763,7 +763,7 @@
       "sha256": "e926c3ce42ab66da36ab18d1696732d43658432920b18baae22323c6a3b607d4",
       "category": "search-feature",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     },
     {
       "filename": "work-plus-web-ui.png",
@@ -772,7 +772,7 @@
       "sha256": "65dce39ecdc9d4b5471fe80894ec9d3fd1c33d19413431ad685098a4149884ab",
       "category": "ui-screenshot",
       "first_imported": "2025-11-15T22:20:57Z",
-      "last_updated": "2025-11-15T22:20:57Z"
+      "last_updated": "2025-11-15T22:22:23Z"
     }
   ]
 }
