@@ -6,6 +6,15 @@ on:
       pull-request:
         description: PR number to evaluate (optional when run manually)
         required: false
+      retro-feedback:
+        description: Retro note to append (captured immediately after QA gate)
+        required: false
+      retro-section:
+        description: "Retro section to update (default: What Went Well)"
+        required: false
+      retro-path:
+        description: "Retro markdown file path (default uses repo variable ACTIVE_RETRO_FILE)"
+        required: false
   pull_request:
     types:
       - labeled
@@ -70,3 +79,21 @@ jobs:
               issue_number: Number(prNumber),
               body: '✅ QA Gate placeholder run completed. Replace with project-specific results.'
             });
+
+      - name: Append retro feedback
+        if: steps.gate.outputs.run_tests == 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs['retro-feedback'] != ''
+        env:
+          RETRO_PATH: ${{ github.event.inputs['retro-path'] != '' && github.event.inputs['retro-path'] || vars.ACTIVE_RETRO_FILE || 'docs/sprint-history/2025-11-dry-run-02/retro.md' }}
+          RETRO_SECTION: ${{ github.event.inputs['retro-section'] != '' && github.event.inputs['retro-section'] || 'What Went Well' }}
+          RETRO_ENTRY: ${{ github.event.inputs['retro-feedback'] }}
+          RETRO_AUTHOR: ${{ github.actor }}
+          RETRO_SOURCE: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          node scripts/retro-append.mjs
+
+      - name: Commit retro feedback
+        if: steps.gate.outputs.run_tests == 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs['retro-feedback'] != ''
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: capture QA retro note"
+          file_pattern: ${{ github.event.inputs['retro-path'] != '' && github.event.inputs['retro-path'] || vars.ACTIVE_RETRO_FILE || 'docs/sprint-history/2025-11-dry-run-02/retro.md' }}

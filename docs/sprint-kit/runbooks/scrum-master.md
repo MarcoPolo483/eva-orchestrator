@@ -17,7 +17,7 @@ Guide the pod through the EVA Agile Command cadence, ensuring ceremonies occur o
 1. Before planning: confirm sprint kit templates copied and populated with DoR, risks, and ceremonies.
 2. During sprint: monitor blockers and update leadership on risk/impediment table.
 3. Before review: verify demo agenda, stakeholders, and acceptance evidence are ready.
-4. After retro: file summary in `docs/sprint-history/<sprint>` and track improvement actions.
+4. After retro: file summary in `docs/sprint-history/<sprint>`, rotate the `ACTIVE_RETRO_FILE` repository variable to the next sprint, and confirm `retro-update.yml` posted to the communication issue.
 
 ## Escalation
 

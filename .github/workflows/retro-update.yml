@@ -1,0 +1,155 @@
+name: Retro Update Broadcast
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/sprint-history/**/retro.md'
+  workflow_dispatch:
+    inputs:
+      retro-path:
+        description: Override retro file path to broadcast
+        required: false
+      issue-number:
+        description: Override communication issue number
+        required: false
+
+permissions:
+  contents: read
+  issues: write
+  actions: read
+
+jobs:
+  broadcast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish retro update
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const core = require('@actions/core');
+            const fs = require('fs');
+            const path = require('path');
+            const { execSync } = require('child_process');
+
+            let issueValue = core.getInput('issue-number');
+            if (!issueValue) {
+              try {
+                const variable = await github.rest.actions.getRepoVariable({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: 'COMM_CHANNEL_ISSUE'
+                });
+                issueValue = variable.data?.value || '';
+              } catch (error) {
+                core.notice('Repository variable COMM_CHANNEL_ISSUE not found.');
+              }
+            }
+            if (!issueValue) {
+              core.warning('No communication issue configured (COMM_CHANNEL_ISSUE). Skipping broadcast.');
+              return;
+            }
+
+            const issueNumber = Number(issueValue);
+            if (!Number.isInteger(issueNumber)) {
+              core.setFailed(`Invalid issue number: ${issueValue}`);
+              return;
+            }
+
+            const retroInput = core.getInput('retro-path');
+            const retroPaths = [];
+
+            if (retroInput) {
+              retroPaths.push(retroInput.trim());
+            } else if (context.eventName === 'push') {
+              const before = context.payload.before;
+              const after = context.sha;
+              let diffOutput = '';
+              try {
+                if (before && before !== '0000000000000000000000000000000000000000') {
+                  diffOutput = execSync(`git diff --name-only ${before} ${after}`, { encoding: 'utf8' });
+                } else {
+                  diffOutput = execSync('git diff --name-only HEAD^ HEAD', { encoding: 'utf8' });
+                }
+              } catch (err) {
+                core.warning(`Failed to compute diff: ${err.message}`);
+              }
+              diffOutput.split('\n').map(f => f.trim()).filter(Boolean).forEach(f => {
+                if (f.startsWith('docs/sprint-history/') && f.endsWith('retro.md')) {
+                  retroPaths.push(f);
+                }
+              });
+            }
+
+            if (!retroPaths.length) {
+              core.notice('No retro files detected in change set.');
+              return;
+            }
+
+            const sectionOrder = [
+              'What Went Well',
+              'What To Improve',
+              'Experiments / Action Items'
+            ];
+
+            function parseSections(markdown) {
+              const sections = new Map();
+              let current = null;
+              markdown.split(/\r?\n/).forEach(line => {
+                const heading = line.match(/^##\s+(.*)$/);
+                if (heading) {
+                  current = heading[1].trim();
+                  if (!sections.has(current)) sections.set(current, []);
+                  return;
+                }
+                if (!current) return;
+                const bullet = line.match(/^\-\s+(.*)$/);
+                if (bullet) {
+                  sections.get(current).push(bullet[1].trim());
+                }
+              });
+              return sections;
+            }
+
+            const sectionsToMarkdown = (title, values) => {
+              if (!values || !values.length) {
+                return `**${title}:** _No entries yet._`;
+              }
+              const bullets = values.map(item => `- ${item}`).join('\n');
+              return `**${title}:**\n${bullets}`;
+            };
+
+            const blocks = retroPaths.map(filePath => {
+              const fullPath = path.join(process.cwd(), filePath);
+              if (!fs.existsSync(fullPath)) {
+                return `**File:** ${filePath}\n_Not found in workspace._`;
+              }
+              const content = fs.readFileSync(fullPath, 'utf8');
+              const sections = parseSections(content);
+              const permalink = `https://github.com/${context.repo.owner}/${context.repo.repo}/blob/${context.sha}/${filePath}`;
+
+              const summaryLines = [`**File:** [${filePath}](${permalink})`];
+              for (const title of sectionOrder) {
+                summaryLines.push('');
+                summaryLines.push(sectionsToMarkdown(title, sections.get(title)));
+              }
+              return summaryLines.join('\n');
+            });
+
+            const body = [
+              `### Retro Update Broadcast (${new Date().toISOString().slice(0, 10)})`,
+              '',
+              blocks.join('\n\n---\n\n'),
+              '',
+              '_Posted automatically by retro-update.yml_'
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body
+            });

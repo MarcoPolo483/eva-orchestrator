@@ -1,0 +1,65 @@
+name: Agent Bootstrap Summary
+
+on:
+  workflow_dispatch:
+    inputs:
+      agent-role:
+        description: "Role identifier matching docs/sprint-kit/runbooks/<role>.md (e.g., qa-master)"
+        required: true
+      target-issue:
+        description: "Issue number to receive the bootstrap comment"
+        required: false
+      retro-path:
+        description: "Active retro file path (optional)"
+        required: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate bootstrap summary
+        id: bootstrap
+        shell: bash
+        env:
+          AGENT_ROLE: ${{ inputs.agent-role }}
+          AGENT_BOOTSTRAP_ISSUE: ${{ inputs.target-issue }}
+          RETRO_PATH: ${{ inputs.retro-path }}
+        run: |
+          node scripts/agent-bootstrap.mjs --output bootstrap-comment.md
+          echo "comment<<'EOF'" >> "$GITHUB_OUTPUT"
+          cat bootstrap-comment.md >> "$GITHUB_OUTPUT"
+          echo 'EOF' >> "$GITHUB_OUTPUT"
+
+      - name: Post comment
+        if: inputs.target-issue != ''
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ inputs.target-issue }}
+          comment-body: ${{ steps.bootstrap.outputs.comment }}
+          script: |
+            const issueNumber = Number(core.getInput('issue-number'));
+            if (!issueNumber) {
+              core.setFailed('Invalid issue number');
+              return;
+            }
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: core.getInput('comment-body')
+            });
+          result-encoding: string
+
+      - name: Output summary
+        if: inputs.target-issue == ''
+        env:
+          BOOTSTRAP_COMMENT: ${{ steps.bootstrap.outputs.comment }}
+        run: |
+          printf '%s\n' "$BOOTSTRAP_COMMENT"

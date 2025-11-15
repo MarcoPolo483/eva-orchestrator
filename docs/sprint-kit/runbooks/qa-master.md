@@ -10,7 +10,7 @@ Ensure every increment meets the EVA Agile Command Definition of Done and guardr
 - Maintain test coverage dashboards and review automation alerts.
 - Label candidate pull requests with `qa-gate` to trigger the workflow suite.
 - Coordinate with Compliance Sentinel on security/privacy findings.
-- Capture QA outcomes in ceremony notes and sprint retros.
+- Capture QA outcomes in ceremony notes and sprint retros (use the `retro-feedback` input when dispatching `qa-gate.yml`).
 
 ## Daily Flow
 

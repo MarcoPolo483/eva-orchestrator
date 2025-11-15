@@ -72,6 +72,13 @@
 - [Master Plan](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/master-plan.md)
 - [Architecture Decisions](https://github.com/MarcoPolo483/eva-orchestrator/tree/main/docs/adr)
 - [VS Code Workspace](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/eva-2.0.code-workspace)
+- [Client Preferences](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/client-preferences.md)
+- [EVA 1.0 Knowledge Pack](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/EVA-2.0/eva-1.0%20goodies/README.md)
+- [EVA OS Extension Backlog](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/EVA-2.0/backlog/eva-os-extension.md)
+- [Portability & AI Pairing Backlog](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/EVA-2.0/backlog/portability-and-ai-pairing.md)
+- [WSL2 + Claude Integration Backlog](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/EVA-2.0/backlog/wsl2-claude-integration.md)
+- [EVA Agent Foundry Backlog](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/EVA-2.0/backlog/eva-agent-foundry.md)
+- [MCP & Agent Strategy Overview](https://github.com/MarcoPolo483/eva-orchestrator/blob/main/docs/reference/mcp-and-agents-overview.md)
 
 ## 🔄 Development Sequence
 
