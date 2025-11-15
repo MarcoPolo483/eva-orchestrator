@@ -7,7 +7,12 @@
     "build": "tsc -p tsconfig.json",
     "dev": "ts-node src/orchestrator.ts",
     "orchestrate": "node --enable-source-maps dist/orchestrator.js",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "update-dashboard": "node --enable-source-maps dist/agents/update-dashboard-agent.js"
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   },
   "dependencies": {
     "@octokit/rest": "^21.0.0",
