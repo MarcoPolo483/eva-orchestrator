@@ -121,3 +121,9 @@ agents:
       - Integration tests & version BOM
       - One-click deploy orchestration
       - Reusable CI workflow distribution
+  - name: Sandbox Agent
+    id: sandbox
+    repos: ["eva-sandbox"]
+    responsibilities:
+      - Experimental features and testing
+      - Sandbox environment for development
