@@ -2,7 +2,7 @@
 
 Run this locally to create and scaffold all EVA 2.0 repositories in your GitHub account or organization.
 
-**📋 [View EVA Hub - Navigate all 17 repos →](EVA-HUB.md)**
+**📋 [View EVA Hub - Navigate all 18 repos →](EVA-HUB.md)**
 
 **🧭 [EVA Agile Command Sprint Kit →](docs/sprint-kit/README.md)**
 

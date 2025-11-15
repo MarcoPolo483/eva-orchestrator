@@ -49,6 +49,12 @@
 | 16 | [eva-seed](https://github.com/MarcoPolo483/eva-seed) | ![Issues](https://img.shields.io/github/issues/MarcoPolo483/eva-seed) | Seed scripts, bilingual knowledge set |
 | 17 | [eva-enterprise](https://github.com/MarcoPolo483/eva-enterprise) | ![Issues](https://img.shields.io/github/issues/MarcoPolo483/eva-enterprise) | Integration tests, version BOM, one-click deploy |
 
+## 🧪 Testing & Validation
+
+| # | Repository | Status | Description |
+|---|------------|--------|-------------|
+| 18 | [eva-sandbox](https://github.com/MarcoPolo483/eva-sandbox) | ![Issues](https://img.shields.io/github/issues/MarcoPolo483/eva-sandbox) | Experimental orchestration test, validation sandbox |
+
 ## 📋 Development Tools
 
 | Repository | Description |
