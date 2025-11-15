@@ -45,6 +45,28 @@ npm run dev
 - Edit `agents/registry.yaml` to change owner/org or repo list
 - Add/modify files under `templates/<repo>` to change what gets pushed
 
+## Update Project Dashboard
+
+Update a GitHub Project board with all issues and pull requests from a repository:
+
+```powershell
+$env:GITHUB_TOKEN="YOUR_PAT"
+npm run build
+npm run update-dashboard -- --repo owner/repo --project "Project Name"
+```
+
+Example:
+```powershell
+npm run update-dashboard -- --repo MarcoPolo483/eva-orchestrator --project "EVA Agile Sprint 1"
+```
+
+Dry run mode:
+```powershell
+npm run update-dashboard -- --repo owner/repo --project "Project Name" --dry-run
+```
+
+**Note:** Your GitHub token must have `project` scope in addition to `repo` scope to update project boards.
+
 ## Agile Command Resources
 
 - [Sprint Kit](docs/sprint-kit/README.md)

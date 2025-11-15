@@ -7,7 +7,8 @@
     "build": "tsc -p tsconfig.json",
     "dev": "ts-node src/orchestrator.ts",
     "orchestrate": "node --enable-source-maps dist/orchestrator.js",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "update-dashboard": "node scripts/update-dashboard.mjs"
   },
   "dependencies": {
     "@octokit/rest": "^21.0.0",
