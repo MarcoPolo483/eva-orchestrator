@@ -1,0 +1,92 @@
+{
+	"folders": [
+		{
+			"name": "orchestrator",
+			"path": "."
+		},
+		{
+			"name": "eva-agent",
+			"path": "../eva-agent"
+		},
+		{
+			"name": "eva-api",
+			"path": "../eva-api"
+		},
+		{
+			"name": "eva-auth",
+			"path": "../eva-auth"
+		},
+		{
+			"name": "eva-core",
+			"path": "../eva-core"
+		},
+		{
+			"name": "eva-enterprise",
+			"path": "../eva-enterprise"
+		},
+		{
+			"name": "eva-i11y",
+			"path": "../eva-i11y"
+		},
+		{
+			"name": "eva-i18n",
+			"path": "../eva-i18n"
+		},
+		{
+			"name": "eva-infra",
+			"path": "../eva-infra"
+		},
+		{
+			"name": "eva-mcp",
+			"path": "../eva-mcp"
+		},
+		{
+			"name": "eva-metering",
+			"path": "../eva-metering"
+		},
+		{
+			"name": "eva-openai",
+			"path": "../eva-openai"
+		},
+		{
+			"name": "eva-ops",
+			"path": "../eva-ops"
+		},
+		{
+			"name": "eva-rag",
+			"path": "../eva-rag"
+		},
+		{
+			"name": "eva-safety",
+			"path": "../eva-safety"
+		},
+		{
+			"name": "eva-seed",
+			"path": "../eva-seed"
+		},
+		{
+			"name": "eva-ui",
+			"path": "../eva-ui"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.yml": "yaml",
+			"*.yaml": "yaml"
+		},
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"github.copilot",
+			"github.copilot-chat",
+			"dbaeumer.vscode-eslint",
+			"esbenp.prettier-vscode",
+			"redhat.vscode-yaml",
+			"ms-vscode.powershell"
+		]
+	}
+}
