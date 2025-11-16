@@ -1,0 +1,72 @@
+name: Siebel Agent • Import Artifacts
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC (adjust as needed)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      artifacts_path:
+        description: 'Path to Siebel artifacts (if running manually)'
+        required: false
+        default: '/tmp/siebel-exports'
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    name: Import Siebel Artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Configure Git
+        run: |
+          git config user.name "Siebel Agent"
+          git config user.email "siebel-agent@noreply.github.com"
+
+      - name: Run Siebel Agent
+        env:
+          # In a real scenario, this would point to a mounted volume or network path
+          # For workflow_dispatch, use the input; otherwise use a default
+          SIEBEL_ARTIFACTS_PATH: ${{ github.event.inputs.artifacts_path || '/tmp/siebel-exports' }}
+          GIT_COMMIT_NAME: "Siebel Agent"
+          GIT_COMMIT_EMAIL: "siebel-agent@noreply.github.com"
+        run: |
+          # Check if artifacts path exists (it may not in CI)
+          if [ ! -d "$SIEBEL_ARTIFACTS_PATH" ]; then
+            echo "⚠️  Artifacts path does not exist: $SIEBEL_ARTIFACTS_PATH"
+            echo "This is expected in CI without mounted artifacts."
+            echo "Skipping import."
+            exit 0
+          fi
+          
+          # Run the agent
+          node agents/siebel-agent/run.mjs
+
+      - name: Push changes
+        run: |
+          # Check if there are commits to push
+          if git log origin/${{ github.ref_name }}..${{ github.ref_name }} --oneline | grep -q .; then
+            git push origin ${{ github.ref_name }}
+            echo "✅ Changes pushed successfully"
+          else
+            echo "ℹ️  No changes to push"
+          fi
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: siebel-import-report
+          path: reports/agents/siebel-import-*.json
+          if-no-files-found: ignore
