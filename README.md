@@ -11,6 +11,7 @@ Run this locally to create and scaffold all EVA 2.0 repositories in your GitHub 
 - Pushes initial files from `templates/<repo>/...` using the GitHub API
 - Adds readiness labels
 - Opens tracking issues
+- Updates GitHub Project dashboards with repository metrics (via `update-dashboard-agent`)
 
 ## Requirements
 - Node.js 20+
@@ -50,3 +51,31 @@ npm run dev
 - [Sprint Kit](docs/sprint-kit/README.md)
 - [Role Runbooks](docs/sprint-kit/runbooks)
 - [RACI Matrix](docs/sprint-kit/raci-matrix.md)
+
+## Agents
+
+### Update Dashboard Agent
+
+Updates a GitHub Project (Projects v2) with repository information and metrics.
+
+**Usage:**
+```bash
+npm run build
+npm run update-dashboard -- --repo <owner/repo> --project "Project Name"
+```
+
+**Example:**
+```bash
+export GITHUB_TOKEN="your_pat_here"
+npm run update-dashboard -- --repo MarcoPolo483/eva-orchestrator --project "EVA Agile Sprint 1"
+```
+
+**Requirements:**
+- GitHub token with `repo` and `project` scopes
+- Project must exist and be accessible by the token owner
+
+**What it does:**
+- Connects to GitHub Projects v2 API
+- Fetches repository metrics (open issues, PRs, stars, etc.)
+- Lists items in the project
+- Displays a dashboard summary
